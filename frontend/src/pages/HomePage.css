@@ -1,0 +1,451 @@
+/* Main background */
+.homepage-quizqueen-bg {
+  background: linear-gradient(180deg, #e3f2fd 0%, #fff 100%);
+}
+
+/* Hero Title */
+.quizqueen-title {
+  color: #23293a;
+  letter-spacing: -1px;
+}
+
+/* Main Button */
+.btn-quizqueen-main {
+  background: linear-gradient(90deg, #3ea6ff 60%, #ff7043 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 2.2rem;
+  font-size: 1.15rem;
+  border: none;
+  box-shadow: 0 2px 12px #3ea6ff33;
+  transition: background 0.2s;
+}
+.btn-quizqueen-main:hover {
+  background: linear-gradient(90deg, #ffb300 0%, #3ea6ff 100%);
+  color: #fff;
+}
+
+/* Outline Button */
+.btn-outline-quizqueen {
+  border: 2px solid #3ea6ff;
+  color: #3ea6ff;
+  background: transparent;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 2.2rem;
+  font-size: 1.15rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn-outline-quizqueen:hover {
+  background: #3ea6ff;
+  color: #fff;
+  border-color: #ff7043;
+}
+
+/* Winners section */
+.quizqueen-winners {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+.winner-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #3ea6ff22;
+  padding: 1.2rem 1.5rem 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  min-width: 220px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.winner-label {
+  font-weight: 700;
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+.winner-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: #e3f2fd;
+  box-shadow: 0 2px 12px #3ea6ff44;
+  background-size: cover;
+  background-position: center;
+}
+.quizqueen-img1 {
+  background-image: url('https://img.icons8.com/color/96/000000/prize.png');
+}
+.quizqueen-img2 {
+  background-image: url('https://img.icons8.com/color/96/000000/trophy.png');
+}
+
+/* Steps Cards */
+.quizqueen-step-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #3ea6ff22;
+  padding: 2.2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-height: 260px;
+}
+.quizqueen-step-card:hover {
+  box-shadow: 0 8px 32px #ff704344;
+  transform: translateY(-8px) scale(1.03);
+}
+.quizqueen-step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px #3ea6ff88);
+}
+.quizqueen-step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.quizqueen-step-desc {
+  color: #23293a;
+  font-size: 1.05rem;
+}
+
+/* Gradient text for brand */
+.brand-gradient {
+  background: linear-gradient(90deg, #3ea6ff 30%, #ffb300 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px #3ea6ff55);
+}
+
+/* Footer */
+.quizqueen-footer {
+  background: #f5f7fa;
+  color: #23293a;
+  border-top: 1.5px solid #e3e6ee;
+}
+
+/* Heartbeat animation for heart */
+.heartbeat {
+  display: inline-block;
+  animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1);}
+  10%, 30%, 50%, 70%, 90% { transform: scale(1.15);}
+  20%, 40%, 60%, 80% { transform: scale(0.95);}
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .quizqueen-winners {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .winner-card {
+    min-width: 160px;
+    padding: 1rem 0.7rem 0.7rem 0.7rem;
+  }
+}
+/* Dark mode for HomePage main background */
+body.bg-dark .homepage-quizqueen-bg,
+.bg-dark .homepage-quizqueen-bg {
+  background: linear-gradient(180deg, #23272f 0%, #23293a 100%) !important;
+}
+
+/* Dark mode for cards/steps */
+body.bg-dark .quizqueen-step-card,
+.bg-dark .quizqueen-step-card {
+  background: #23293a !important;
+  color: #f3f6fa !important;
+  border: 1.5px solid #3a4256 !important;
+  box-shadow: 0 8px 32px #3ea6ff33, 0 1.5px 0 #fff1;
+}
+body.bg-dark .quizqueen-step-card .quizqueen-step-title,
+.bg-dark .quizqueen-step-card .quizqueen-step-title {
+  color: #3ea6ff !important;
+}
+body.bg-dark .quizqueen-step-card .quizqueen-step-desc,
+.bg-dark .quizqueen-step-card .quizqueen-step-desc {
+  color: #bfc9d8 !important;
+}
+
+/* Dark mode for winners section */
+body.bg-dark .winner-card,
+.bg-dark .winner-card {
+  background: #23293a !important;
+  color: #f3f6fa !important;
+  border: 1.5px solid #3a4256 !important;
+  box-shadow: 0 8px 32px #3ea6ff33, 0 1.5px 0 #fff1;
+}
+body.bg-dark .winner-label,
+.bg-dark .winner-label {
+  color: #3ea6ff !important;
+}
+
+/* Dark mode for footer */
+body.bg-dark .quizqueen-footer,
+.bg-dark .quizqueen-footer {
+  background: #23272f !important;
+  color: #bfc9d8 !important;
+  border-top: 1.5px solid #3a4256 !important;
+}
+body.bg-dark .quizqueen-footer a,
+.bg-dark .quizqueen-footer a {
+  color: #3ea6ff !important;
+}
+
+/* Dark mode for buttons */
+body.bg-dark .btn-quizqueen-main,
+.bg-dark .btn-quizqueen-main {
+  background: linear-gradient(90deg, #3ea6ff 60%, #ff7043 100%) !important;
+  color: #fff !important;
+  border: none !important;
+}
+body.bg-dark .btn-outline-quizqueen,
+.bg-dark .btn-outline-quizqueen {
+  border: 2px solid #3ea6ff !important;
+  color: #3ea6ff !important;
+  background: transparent !important;
+}
+body.bg-dark .btn-outline-quizqueen:hover,
+.bg-dark .btn-outline-quizqueen:focus {
+  background: #3ea6ff !important;
+  color: #fff !important;
+  border-color: #ff7043 !important;
+}
+
+/* Dark mode for icons/images */
+body.bg-dark .winner-img,
+.bg-dark .winner-img {
+  background: #23293a !important;
+  box-shadow: 0 2px 12px #3ea6ff44;
+}
+/* Headings more vibrant in dark mode */
+body.bg-dark .quizqueen-title,
+.bg-dark .quizqueen-title {
+  color: #fff !important;
+  text-shadow: 0 2px 24px #3ea6ff33, 0 1px 0 #0008;
+}
+
+body.bg-dark .brand-gradient,
+.bg-dark .brand-gradient {
+  filter: drop-shadow(0 0 16px #3ea6ff88);
+}
+
+/* Description text brighter */
+body.bg-dark .lead,
+.bg-dark .lead {
+  color: #bfc9d8 !important;
+}
+
+/* Card glow and border */
+body.bg-dark .quizqueen-step-card,
+.bg-dark .quizqueen-step-card,
+body.bg-dark .winner-card,
+.bg-dark .winner-card {
+  background: #23293a !important;
+  color: #f3f6fa !important;
+  border: 1.5px solid #3ea6ff55 !important;
+  box-shadow: 0 0 32px #3ea6ff33, 0 2px 8px #0004;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+body.bg-dark .quizqueen-step-card:hover,
+.bg-dark .quizqueen-step-card:hover,
+body.bg-dark .winner-card:hover,
+.bg-dark .winner-card:hover {
+  box-shadow: 0 0 48px #3ea6ff77, 0 4px 16px #0006;
+  border-color: #ffb300;
+}
+
+/* Card titles and icons more vibrant */
+body.bg-dark .quizqueen-step-title,
+.bg-dark .quizqueen-step-title,
+body.bg-dark .winner-label,
+.bg-dark .winner-label {
+  color: #3ea6ff !important;
+  text-shadow: 0 2px 12px #3ea6ff44;
+}
+
+body.bg-dark .quizqueen-step-icon,
+.bg-dark .quizqueen-step-icon {
+  filter: drop-shadow(0 0 16px #3ea6ffcc);
+}
+
+/* Buttons more pop */
+body.bg-dark .btn-quizqueen-main,
+.bg-dark .btn-quizqueen-main {
+  background: linear-gradient(90deg, #3ea6ff 0%, #ffb300 100%) !important;
+  color: #23293a !important;
+  box-shadow: 0 2px 16px #3ea6ff55;
+  border: none !important;
+}
+
+body.bg-dark .btn-quizqueen-main:hover,
+.bg-dark .btn-quizqueen-main:hover {
+  background: linear-gradient(90deg, #ff7043 0%, #3ea6ff 100%) !important;
+  color: #fff !important;
+}
+
+body.bg-dark .btn-outline-quizqueen,
+.bg-dark .btn-outline-quizqueen {
+  border: 2px solid #3ea6ff !important;
+  color: #3ea6ff !important;
+  background: transparent !important;
+  box-shadow: 0 2px 8px #3ea6ff33;
+}
+
+body.bg-dark .btn-outline-quizqueen:hover,
+.bg-dark .btn-outline-quizqueen:focus {
+  background: #3ea6ff !important;
+  color: #fff !important;
+  border-color: #ff7043 !important;
+}
+
+/* Footer contrast */
+body.bg-dark .quizqueen-footer,
+.bg-dark .quizqueen-footer {
+  background: #1b1e25 !important;
+  color: #bfc9d8 !important;
+  border-top: 1.5px solid #3ea6ff55 !important;
+}
+/* Leaderboard & Analytics cards (top right) - light mode */
+.quizqueen-featurebox {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px #3ea6ff22;
+  padding: 1.2rem 2.2rem 1.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  min-width: 270px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1976d2;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+.quizqueen-featurebox .featurebox-icon {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 0 8px #3ea6ff55);
+  margin-right: 0.7rem;
+}
+
+/* Dark mode for featurebox */
+body.bg-dark .quizqueen-featurebox,
+.bg-dark .quizqueen-featurebox {
+  background: #23293a !important;
+  color: #3ea6ff !important;
+  box-shadow: 0 0 48px #3ea6ff55, 0 2px 8px #0008 !important;
+  border: 1.5px solid #3ea6ff55 !important;
+}
+body.bg-dark .quizqueen-featurebox .featurebox-icon,
+.bg-dark .quizqueen-featurebox .featurebox-icon {
+  filter: drop-shadow(0 0 16px #3ea6ffcc);
+}
+body.bg-dark .homepage-quizqueen-bg,
+.bg-dark .homepage-quizqueen-bg {
+  background: linear-gradient(135deg, #23293a 0%, #23272f 100%) !important;
+}
+/* Attractive Navbar Styles */
+.quizqueen-navbar {
+  background: linear-gradient(90deg, #e3f2fd 60%, #fff 100%);
+  border-bottom: 2px solid #3ea6ff22;
+  box-shadow: 0 2px 16px #3ea6ff11;
+  transition: background 0.3s;
+}
+
+.brand-gradient {
+  background: linear-gradient(90deg, #3ea6ff 30%, #ffb300 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px #3ea6ff55);
+}
+
+.quizqueen-navbar .nav-link {
+  font-weight: 500;
+  color: #23293a !important;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.quizqueen-navbar .nav-link:hover,
+.quizqueen-navbar .nav-link.active {
+  background: linear-gradient(90deg, #3ea6ff22 0%, #ffb30022 100%);
+  color: #3ea6ff !important;
+}
+
+.btn-theme-toggle {
+  border-radius: 50%;
+  font-size: 1.3rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #3ea6ff22;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-theme-toggle.btn-dark {
+  background: linear-gradient(90deg, #3ea6ff 60%, #ffb300 100%);
+  color: #fff;
+}
+.btn-theme-toggle.btn-light {
+  background: #fff;
+  color: #3ea6ff;
+  border: 1.5px solid #3ea6ff55;
+}
+
+.btn-theme-toggle:hover {
+  background: linear-gradient(90deg, #ffb300 0%, #3ea6ff 100%);
+  color: #fff;
+}
+
+.quizqueen-navbar .btn,
+.quizqueen-navbar .btn-sm {
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.35rem 1.2rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+/* Dark mode for navbar */
+body.bg-dark .quizqueen-navbar,
+.bg-dark .quizqueen-navbar {
+  background: linear-gradient(90deg, #23293a 60%, #23272f 100%) !important;
+  border-bottom: 2px solid #3ea6ff33;
+}
+body.bg-dark .quizqueen-navbar .nav-link,
+.bg-dark .quizqueen-navbar .nav-link {
+  color: #f3f6fa !important;
+}
+body.bg-dark .quizqueen-navbar .nav-link:hover,
+.bg-dark .quizqueen-navbar .nav-link.active {
+  background: linear-gradient(90deg, #3ea6ff33 0%, #ffb30033 100%);
+  color: #3ea6ff !important;
+}
+body.bg-dark .brand-gradient,
+.bg-dark .brand-gradient {
+  filter: drop-shadow(0 0 16px #3ea6ff88);
+}
+/* Add this to HomePage.css or your main CSS */
+.btn-outline-quizqueen {
+  border: 2px solid #0d6efd !important;   /* Bootstrap primary blue */
+  color: #0d6efd !important;
+  background: transparent !important;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-outline-quizqueen:hover, .btn-outline-quizqueen:focus {
+  background: #0d6efd !important;
+  color: #fff !important;
+}

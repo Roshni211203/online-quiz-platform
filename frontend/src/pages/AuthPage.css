@@ -1,0 +1,25 @@
+.auth-container {
+   /* background: linear-gradient(100deg, #dee3ea 0%, #f9f9f9 100%);  */
+  min-height: 200vh;
+}
+
+.auth-card {
+   border-radius: 16px; 
+  box-shadow: 0 4px 32px #007bff22;
+}
+
+.auth-card h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px #007bff33;
+} 
+
+.btn-primary, .btn-success {
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}  
